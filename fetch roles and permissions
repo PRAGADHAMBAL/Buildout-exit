@@ -1,0 +1,26 @@
+export default async function fetchRoleandPermissions (req)
+{
+    //get user by req.user._id
+    const userroles=await userRole.find({
+        userid:req.user.id;
+
+    })
+
+    let roles ={};
+    (await roles.find)({
+        _id: {$in:userroles.map(({roleid})=>roleid)}
+    }}).foreach(((role)))
+    })
+let permissions={};
+if(userroles.length)
+{
+    const rolepermissions =await RolePermission.find({
+        roleId : {$in :userroles.map({{roleId})=>roleId}}
+    }};
+    if(fetchRoleandPermissions.length) {
+        (await permission.find({
+
+        })
+    }
+    })
+}

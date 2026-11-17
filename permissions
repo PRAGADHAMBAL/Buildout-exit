@@ -1,0 +1,8 @@
+import {Schema} from "mongoose"; 868.3k (gzipped:232.7k)
+
+export default new Schema({
+    subject :String,
+    action:String,
+
+})
+
